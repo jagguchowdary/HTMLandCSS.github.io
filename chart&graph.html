@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Production Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .chart-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        canvas {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Crop Production in 2024</h2>
+    <div class="chart-container">
+        <canvas id="cropChart"></canvas>
+    </div>
+
+    <script>
+        var ctx = document.getElementById('cropChart').getContext('2d');
+        var cropChart = new Chart(ctx, {
+            type: 'bar', // Can be 'line', 'pie', etc.
+            data: {
+                labels: ['Wheat', 'Rice', 'Corn', 'Sugarcane', 'Pulses'],
+                datasets: [{
+                    label: 'Production (in tons)',
+                    data: [120, 150, 180, 100, 90], // Adjust values as needed
+                    backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0', '#9966ff'],
+                    borderColor: '#333',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
