@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture in My Village</title>
+    <link rel="icon" href="crop.jpg">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(rgba(0, 100, 0, 0.7), rgba(0, 100, 0, 0.7)), url('farm-banner.jpg') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 10px 8px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #4CAF50;
+            padding: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #388E3C;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .section img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .section-content {
+            flex: 1;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #388E3C;
+        }
+        footer {
+            background: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Agriculture in M.Agraharam</h1>
+    <p>Preserving traditions, growing the future</p>
+</header>
+
+<nav>
+    <a href="http://127.0.0.1:5500/about_page.html" target="_blank">About</a>
+    <a href="http://127.0.0.1:5500/crops_page.html" target="_blank">Crops</a>
+    <a href="http://127.0.0.1:5500/contact.html" target="_blank">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="section" id="about">
+        <img src="agriculture-logo1.jpg" alt="Farm Image">
+        <div class="section-content">
+            <h2>About Our Agriculture</h2>
+            <p>Our village M.Agraharam, thrives on agriculture, using eco-friendly methods to cultivate crops that sustain our community.</p>
+            <a href="http://127.0.0.1:5500/about_page.html" class="btn" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+    <div class="section" id="crops">
+        <img src="main_crops.jpg" alt="Crops Image">
+        <div class="section-content">
+            <h2>Main Crops</h2>
+            <p>We grow a variety of crops including rice, wheat, maize, and seasonal vegetables, ensuring fresh and organic produce.</p>
+            <a href="http://127.0.0.1:5500/crops_page.html" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <img src="Contact_Us.png" alt="Contact Image">
+        <div class="section-content">
+            <h2>Contact Us</h2>
+            <p>Village:M.Agraharam</p>
+            <p>Address:Maddikera(M), Kurnool(dist), AP-518385</p>
+            <p>Email: villageagriculture.com</p>
+            <p>Phone: +91-6360926206</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Agriculture in M.Agraharam. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
